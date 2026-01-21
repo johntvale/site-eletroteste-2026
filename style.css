@@ -111,12 +111,18 @@ img { max-width: 100%; display: block; }
 }
 .slider-content { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 40px; width: 100%; }
 
-.slide-text h1 { font-size: 3rem; line-height: 1.1; color: var(--dark-blue); margin-bottom: 20px; text-transform: uppercase; }
+.slide-text h1 { font-size: clamp(2.2rem, 4vw, 3rem); line-height: 1.1; color: var(--dark-blue); margin-bottom: 20px; text-transform: uppercase; }
 .slide-text p { font-size: 1rem; margin-bottom: 30px; color: #555; max-width: 90%; }
 
 .slide-image { display: flex; justify-content: center; align-items: center; height: 100%; position: relative; }
 .slide-image img.product-img { max-height: 500px; width: auto; filter: drop-shadow(0 15px 30px rgba(0,0,0,0.2)); z-index: 1; }
-.brand-logo { position: absolute; bottom: 20px; right: 20px; max-height: 25px; z-index: 2; }
+.brand-logo { 
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    max-height: 25px;
+    z-index: 2;
+}
 
 .slider-controls { display: flex; justify-content: center; gap: 15px; margin-top: 40px; }
 .control-dot { width: 15px; height: 15px; background-color: #ccc; border-radius: 50%; cursor: pointer; transition: var(--transition); }
@@ -350,10 +356,19 @@ footer { background-color: var(--dark-blue); color: #ccc; padding-top: 70px; bor
     .nav-links.active { transform: translateY(0); }
     .nav-links a { color: var(--white); margin: 10px 0; }
     
-    .slider-content { grid-template-columns: 1fr; text-align: center; }
+    .slider-content { grid-template-columns: 1fr; text-align: center; font-size: medium!; }
     .slide-image { order: 1; } .slide-text { order: 2; }
     .slide-image img.product-img { max-height: 250px; }
-    .brand-logo { bottom: 10px; right: 10%; }
+    .brand-logo {
+        bottom: 10px;
+        right: 10%;
+    }
+    .slider-content .brand-logo {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(4px);
+        padding: 6px 8px;
+        border-radius: 6px;
+    }
     
     .sobre-content { flex-direction: column; }
     .produtos-wrapper { grid-template-columns: 1fr; gap: 0;} 
