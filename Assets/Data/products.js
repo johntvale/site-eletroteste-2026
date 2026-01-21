@@ -380,21 +380,21 @@ const PRODUCT_DATA = {
             title: "Controlador de Temperatura TC4S",
             old_price: "R$ 479,50",
             offer_price: "R$ 407,50",
-            image: "Assets/Images/Offers-Products/Controlador de Temperatura TC4S.webp",
+            image: "Assets/Images/Offers-products/Controlador de Temperatura TC4S.webp",
         },
         {
             id: 2,
             title: "Controlador de Segurança SFC",
             old_price: "R$ 821,20",
             offer_price: "R$ 697,90",
-            image: "Assets/Images/Offers-Products/Controlador de Segurança SFC.webp",
+            image: "Assets/Images/Offers-products/Controlador de Segurança SFC.webp",
         },
         {
             id: 3,
             title: "Torre de Sinalização TPWS6",
             old_price: "R$ 635,50",
             offer_price: "R$ 508,40",
-            image: "Assets/Images/Offers-Products/Torre de Sinalização TPWS6-73ROG-B.webp",
+            image: "Assets/Images/Offers-products/Torre de Sinalização TPWS6-73ROG-B.webp",
         },
     ]
 }
