@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="${whatsAppSliderLink}" class="btn-cta"><i class="fab fa-whatsapp"></i> Solicitar cotação</a>
             </div>
             <div class="slide-image fade-in">
-                <img src="${product.image}" alt="${product.title}" loading="lazy" class="product-img">
-                <img src="${product.brand}" alt="Marca ${product.brand}" loading="lazy" class="brand-logo">
+                <img src="${product.image}" alt="${product.title}" class="product-img">
+                <img src="${product.brand}" alt="Marca ${product.brand}" class="brand-logo">
             </div>
         `;
         updateDots(index);
